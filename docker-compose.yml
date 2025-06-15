@@ -2,7 +2,9 @@ version: '3.8'
 
 services:
   magi-server:
-    build: .
+    # build: .
+    image: ghcr.io/luizbafilho/magi-server:latest
+    platform: linux/amd64
     ports:
       - "8000:8000"
     volumes:
